@@ -1,8 +1,10 @@
+import { ApolloClient, InMemoryCache } from '@apollo/client'
+import { GET_HOMEPAGE } from '../graphql/queries'
 import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
 
-export default function Home() {
+export default function Home({homePage}) {
   return (
     <div className={styles.container}>
       <Head>
@@ -13,12 +15,11 @@ export default function Home() {
 
       <main className={styles.main}>
         <h1 className={styles.title}>
-          Welcome to <a href="https://nextjs.org">Next.js!</a>
+          {homePage.Hero.Heading}
         </h1>
 
         <p className={styles.description}>
-          Get started by editing{' '}
-          <code className={styles.code}>pages/index.js</code>
+          {homePage.Hero.Subheading}
         </p>
 
         <div className={styles.grid}>
@@ -66,4 +67,19 @@ export default function Home() {
       </footer>
     </div>
   )
+}
+
+export const getStaticProps = async () => {
+  const client = new ApolloClient({
+    uri: process.env.STRAPI_GRAPHQL_API,
+    cache: new InMemoryCache()
+  });
+
+  const { data } = await client.query({ query: GET_HOMEPAGE });
+ 
+  return {
+    props: {
+      homePage: data.homepage.data.attributes
+    }
+  }
 }
