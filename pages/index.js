@@ -2,7 +2,6 @@ import { ApolloClient, InMemoryCache } from '@apollo/client'
 import { GET_HOMEPAGE } from '../graphql/queries'
 import Head from 'next/head'
 import Image from 'next/image'
-import styles from '../styles/Home.module.css'
 
 export default function Home({homePage}) {
   return (
@@ -13,12 +12,12 @@ export default function Home({homePage}) {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main className={styles.main}>
-        <h1 className={styles.title}>
+      <main>
+        <h1>
           {homePage.Hero.Heading}
         </h1>
 
-        <p className={styles.description}>
+        <p>
           {homePage.Hero.Subheading}
         </p>
       </main>
