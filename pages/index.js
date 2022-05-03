@@ -1,9 +1,9 @@
-import { ApolloClient, InMemoryCache } from '@apollo/client'
-import { GET_HOMEPAGE } from '../graphql/queries'
-import Head from 'next/head'
-import Image from 'next/image'
+import { ApolloClient, InMemoryCache } from '@apollo/client';
+import { GET_HOMEPAGE } from '../graphql/queries';
+import Head from 'next/head';
+import Image from 'next/image';
 
-export default function Home({homePage}) {
+export default function Home({ homePage }) {
   return (
     <div>
       <Head>
@@ -13,33 +13,27 @@ export default function Home({homePage}) {
       </Head>
 
       <main>
-        <h1>
-          {homePage.Hero.Heading}
-        </h1>
+        <h1>{homePage.Hero.Heading}</h1>
 
-        <p>
-          {homePage.Hero.Subheading}
-        </p>
+        <p>{homePage.Hero.Subheading}</p>
       </main>
 
-      <footer>
-        
-      </footer>
+      <footer></footer>
     </div>
-  )
+  );
 }
 
 export const getStaticProps = async () => {
   const client = new ApolloClient({
     uri: process.env.STRAPI_GRAPHQL_API,
-    cache: new InMemoryCache()
+    cache: new InMemoryCache(),
   });
 
   const { data } = await client.query({ query: GET_HOMEPAGE });
- 
+
   return {
     props: {
-      homePage: data.homepage.data.attributes
-    }
-  }
-}
+      homePage: data.homepage.data.attributes,
+    },
+  };
+};
