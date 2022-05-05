@@ -10,7 +10,7 @@ export default function Home({ homePage }) {
         <title>Tyler Purvines: Web Marketer, Developer, Cat Lover</title>
         <meta
           name="description"
-          content="Explore how digital marketing and development come together. Tyler shares his journey from SEO to marketing web development."
+          content="Explore how digital marketing and development come together. Tyler shares his journey from SEO marketer to web developer."
         />
         <link rel="icon" href="/favicon.ico" />
       </Head>
