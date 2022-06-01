@@ -1,5 +1,16 @@
+import Head from 'next/head';
+
 export default function ExpensesChart() {
-    return (
-        <h1>Expenses Chart</h1>
-    );
+  return (
+    <div>
+      <Head>
+        <title>Expenses Chart</title>
+        <meta name="robots" content="noindex"></meta>
+      </Head>
+
+      <main>
+        <h1>test</h1>
+      </main>
+    </div>
+  );
 }
