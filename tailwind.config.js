@@ -4,7 +4,21 @@ module.exports = {
     "./components/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        'ec-sans': ['DM Sans', 'sans-serif']
+      },
+      colors: {
+        'ec-cream': '#F8E9DD',
+        'ec-card-white': '#FFFBF6',
+        'ec-brown': {
+          400: '#92857A',
+          700: '#382314'
+        },
+        'ec-cyan': '#76B5BC',
+        'ec-orange': '#EC755D'
+      }
+    },
   },
   plugins: [],
 }
