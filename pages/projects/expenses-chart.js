@@ -19,7 +19,6 @@ export async function getServerSideProps() {
   const api = process.env.API_URL;
   const res = await fetch(`${api}/api/expenses-chart`);
   const data = await res.json();
-
   return { props: { data } }
 }
 
