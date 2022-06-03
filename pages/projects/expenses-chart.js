@@ -8,9 +8,8 @@ function ExpensesChart({ data }) {
       <Head>
         <title>Expenses Chart</title>
         <meta name="robots" content="noindex"></meta>
-        <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap" rel="stylesheet"></link>
       </Head>
-
+      <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap" rel="stylesheet"></link>
       <main className='bg-ec-cream h-screen w-screen flex flex-col justify-center items-center'>
         <ECWidget
           data={data} />
