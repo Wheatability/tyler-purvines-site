@@ -10,8 +10,11 @@ module.exports = {
       },
       fontSize: {
         'ec-sm': '15px',
+        'ec-md': '18px',
         'ec-lg': '24px',
-        'ec-xl': '30px'
+        'ec-xl': '30px',
+        'ec-xxl': '32px',
+        'ec-xxxl': '48px'
       },
       colors: {
         'ec-cream': '#F8E9DD',
