@@ -41,7 +41,7 @@ function ECChart({ days }) {
                 <div key={index} className="relative w-full">
                   <div onMouseEnter={e => handleMouseEnter(e, index)} onMouseLeave={e => handleMouseLeave(e, index)} style={{
                     height: barRatios[index]
-                  }} tabIndex={index} className="bg-ec-cyan w-full rounded-[3px] md:rounded-[5px] hover:opacity-80">
+                  }} className="bg-ec-cyan w-full rounded-[3px] md:rounded-[5px] hover:opacity-80">
                   </div>
                   {tooltips[index] && <div className="absolute -top-[35px] md:-top-[45px] -left-[9px] md:-left-[11px] bg-ec-brown-700 text-ec-cream text-ec-xs md:text-ec-md font-bold w-[50px] md:w-[75px] h-[30px] md:h-[40px] rounded-[3px] md:rounded-[5px] flex justify-center items-center">${day.amount}</div>}
 
@@ -52,7 +52,7 @@ function ECChart({ days }) {
                 <div key={index} className="relative w-full">
                   <div onMouseEnter={e => handleMouseEnter(e, index)} onMouseLeave={e => handleMouseLeave(e, index)} style={{
                     height: barRatios[index]
-                  }} tabIndex={index} className="bg-ec-orange w-full rounded-[3px] md:rounded-[5px] hover:opacity-80">
+                  }} className="bg-ec-orange w-full rounded-[3px] md:rounded-[5px] hover:opacity-80">
                   </div>
                   {tooltips[index] && <div className="absolute -top-[35px] md:-top-[45px] -left-[9px] md:-left-[11px] bg-ec-brown-700 text-ec-cream text-ec-xs md:text-ec-md font-bold w-[50px] md:w-[75px] h-[30px] md:h-[40px] rounded-[3px] md:rounded-[5px] flex justify-center items-center">${day.amount}</div>}
                 </div>
