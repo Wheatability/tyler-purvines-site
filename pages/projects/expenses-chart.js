@@ -1,5 +1,6 @@
 /* eslint-disable @next/next/no-page-custom-font */
 import Head from 'next/head';
+import ECWidget from '../../components/expenses-chart/ec-widget';
 
 function ExpensesChart({ data }) {
   return (
@@ -12,12 +13,13 @@ function ExpensesChart({ data }) {
         <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap" rel="stylesheet"></link>
       </Head>
 
-      <main className='bg-ec-cream h-screen w-screen'>
-
+      <main className='bg-ec-cream h-screen w-screen flex justify-center items-center'>
+        <ECWidget
+          data={data} />
       </main>
     </div >
   );
-}
+};
 
 export async function getServerSideProps() {
   const api = process.env.API_URL;

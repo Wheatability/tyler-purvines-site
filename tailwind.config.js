@@ -8,6 +8,11 @@ module.exports = {
       fontFamily: {
         'ec-sans': ['DM Sans', 'sans-serif']
       },
+      fontSize: {
+        'ec-sm': '15px',
+        'ec-lg': '24px',
+        'ec-xl': '30px'
+      },
       colors: {
         'ec-cream': '#F8E9DD',
         'ec-card-white': '#FFFBF6',
