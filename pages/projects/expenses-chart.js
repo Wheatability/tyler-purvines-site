@@ -16,10 +16,10 @@ function ExpensesChart({ data }) {
       <main className='bg-ec-cream h-screen w-screen flex flex-col justify-center items-center'>
         <ECWidget
           data={data} />
-        <div style={{ fontSize: "11px", position: "absolute", bottom: "0" }}>
+        <h1 style={{ fontSize: "11px", position: "absolute", bottom: "0" }}>
           Challenge by <a href="https://www.frontendmentor.io?ref=challenge" rel="noreferrer" target="_blank">Frontend Mentor</a>.
           Coded by <a href="#" >Tyler Purvines.</a>
-        </div>
+        </h1>
       </main>
 
     </div >
