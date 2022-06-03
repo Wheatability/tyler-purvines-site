@@ -11,7 +11,7 @@ export default function handler(req, res) {
       },
       {
         "day": "wed",
-        "amount": genRand(38.00, 60.00)
+        "amount": genRand(40.00, 60.00)
       },
       {
         "day": "thu",
@@ -23,7 +23,7 @@ export default function handler(req, res) {
       },
       {
         "day": "sat",
-        "amount": genRand(15.00, 50.00)
+        "amount": genRand(15.00, 40.00)
       },
       {
         "day": "sun",
