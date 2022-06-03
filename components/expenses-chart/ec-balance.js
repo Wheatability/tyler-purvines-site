@@ -1,4 +1,4 @@
-function ECBalance({ balance }) {
+function ECBalance() {
   return (
     <>
       <div className="h-[97px] bg-ec-orange rounded-[10px] flex justify-between p-[20px]">
