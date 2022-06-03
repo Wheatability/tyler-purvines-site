@@ -6,7 +6,8 @@ function ECWidget({ data }) {
     <>
       <div id="widget" className="h-[534px] w-[343px] flex flex-col space-y-[16px] font-ec-sans select-auto">
         <ECBalance />
-        <ECSpending />
+        <ECSpending
+          days={data.days} />
       </div>
     </>
   );
