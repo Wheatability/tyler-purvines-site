@@ -3,32 +3,37 @@ export default function handler(req, res) {
     days: [
       {
         "day": "mon",
-        "amount": 17.45
+        "amount": genRand(10.00, 25.00)
       },
       {
         "day": "tue",
-        "amount": 34.91
+        "amount": genRand(20.00, 40.00)
       },
       {
         "day": "wed",
-        "amount": 52.36
+        "amount": genRand(38.00, 60.00)
       },
       {
         "day": "thu",
-        "amount": 31.07
+        "amount": genRand(25.00, 35.00)
       },
       {
         "day": "fri",
-        "amount": 23.39
+        "amount": genRand(10.00, 25.00)
       },
       {
         "day": "sat",
-        "amount": 43.28
+        "amount": genRand(15.00, 50.00)
       },
       {
         "day": "sun",
-        "amount": 25.48
+        "amount": genRand(22.00, 35.00)
       }
     ]
   })
+}
+
+// 227.94
+function genRand(min, max) {
+  return (Math.random() * (max - min) + min).toFixed(2)
 }
