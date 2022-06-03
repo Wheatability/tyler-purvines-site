@@ -9,6 +9,7 @@ module.exports = {
         'ec-sans': ['DM Sans', 'sans-serif']
       },
       fontSize: {
+        'ec-xs': '12px',
         'ec-sm': '15px',
         'ec-md': '18px',
         'ec-lg': '24px',
