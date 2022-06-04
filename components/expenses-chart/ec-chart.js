@@ -43,7 +43,7 @@ function ECChart({ days }) {
                     height: barRatios[index]
                   }} className="bg-ec-cyan w-full rounded-[3px] md:rounded-[5px] hover:opacity-80">
                   </div>
-                  {tooltips[index] && <div className="absolute -top-[35px] md:-top-[45px] -left-[9px] md:-left-[11px] bg-ec-brown-700 text-ec-cream text-ec-xs md:text-ec-md font-bold w-[50px] md:w-[75px] h-[30px] md:h-[40px] rounded-[3px] md:rounded-[5px] flex justify-center items-center">${day.amount}</div>}
+                  {tooltips[index] && <div className="absolute -top-[35px] md:-top-[48px] -left-[9px] md:-left-[10px] bg-ec-brown-700 text-ec-card-white text-ec-xs md:text-ec-md font-bold w-[50px] md:w-[75px] h-[30px] md:h-[40px] rounded-[3px] md:rounded-[5px] flex justify-center items-center">${day.amount}</div>}
 
                 </div>
               );
@@ -54,7 +54,7 @@ function ECChart({ days }) {
                     height: barRatios[index]
                   }} className="bg-ec-orange w-full rounded-[3px] md:rounded-[5px] hover:opacity-80">
                   </div>
-                  {tooltips[index] && <div className="absolute -top-[35px] md:-top-[45px] -left-[9px] md:-left-[11px] bg-ec-brown-700 text-ec-cream text-ec-xs md:text-ec-md font-bold w-[50px] md:w-[75px] h-[30px] md:h-[40px] rounded-[3px] md:rounded-[5px] flex justify-center items-center">${day.amount}</div>}
+                  {tooltips[index] && <div className="absolute -top-[35px] md:-top-[42px] -left-[9px] md:-left-[10px] bg-ec-brown-700 text-ec-card-white text-ec-xs md:text-ec-md font-bold w-[50px] md:w-[70px] h-[30px] md:h-[35px] rounded-[3px] md:rounded-[5px] flex justify-center items-center">${day.amount}</div>}
                 </div>
               );
             }
