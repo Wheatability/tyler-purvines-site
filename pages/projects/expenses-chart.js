@@ -1,6 +1,7 @@
 /* eslint-disable @next/next/no-page-custom-font */
 import Head from 'next/head';
 import ECWidget from '../../components/expenses-chart/ec-widget';
+import 'typeface-dm-sans';
 
 function ExpensesChart({ data }) {
   return (
@@ -9,7 +10,6 @@ function ExpensesChart({ data }) {
         <title>Expenses Chart</title>
         <meta name="robots" content="noindex"></meta>
       </Head>
-      <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap" rel="stylesheet"></link>
       <main className='bg-ec-cream h-screen w-screen flex flex-col justify-center items-center'>
         <ECWidget
           data={data} />
