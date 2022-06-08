@@ -1,7 +1,7 @@
 /* eslint-disable @next/next/no-page-custom-font */
 import Head from 'next/head';
 
-function ExpensesChart() {
+function IntroDropdownNav() {
   return (
     <div>
       <Head>
@@ -19,4 +19,4 @@ function ExpensesChart() {
   );
 };
 
-export default ExpensesChart;
+export default IntroDropdownNav;
