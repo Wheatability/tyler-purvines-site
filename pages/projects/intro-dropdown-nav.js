@@ -1,7 +1,7 @@
 /* eslint-disable @next/next/no-page-custom-font */
 import Head from 'next/head';
 import Image from 'next/image';
-import heroImage from '../../public/idn-hero-mobile.png';
+import heroImage from '../../public/images/idn-hero-mobile.png';
 
 function IntroDropdownNav() {
   return (
