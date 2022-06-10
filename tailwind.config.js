@@ -6,7 +6,8 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        'ec-sans': ['DM Sans', 'sans-serif']
+        'ec-sans': ['DM Sans', 'sans-serif'],
+        'idn-sans': ['Epilogue', 'sans-serif']
       },
       fontSize: {
         'ec-xs': '12px',
@@ -15,7 +16,10 @@ module.exports = {
         'ec-lg': '24px',
         'ec-xl': '30px',
         'ec-xxl': '32px',
-        'ec-xxxl': '48px'
+        'ec-xxxl': '48px',
+        'idn-sm': '14px',
+        'idn-md': '18px',
+        'idn-lg': '80px'
       },
       colors: {
         'ec-cream': '#F8E9DD',
