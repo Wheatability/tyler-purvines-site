@@ -11,11 +11,13 @@ function IntroDropdownNav() {
         <link rel="preconnect" href="https://fonts.gstatic.com"></link>
         <link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@400;700&display=swap" rel="stylesheet"></link>
       </Head>
-      <main>
+      <main className='max-w-[1440px]'>
         <nav>
 
         </nav>
-      
+        <div>
+          
+        </div>
       </main>
       <p style={{ fontSize: "11px", position: "absolute", bottom: "0" }}>
         Challenge by <a href="https://www.frontendmentor.io?ref=challenge" rel="noreferrer" target="_blank">Frontend Mentor</a>.
