@@ -1,7 +1,7 @@
 /* eslint-disable @next/next/no-page-custom-font */
 import Head from 'next/head';
 import Image from 'next/image';
-import heroImage from '../../public/images/idn-hero-mobile.png';
+import heroImage from '../../public/images/idn/hero-mobile.png';
 
 function IntroDropdownNav() {
   return (
@@ -14,12 +14,12 @@ function IntroDropdownNav() {
         <link href='https://fonts.googleapis.com/css2?family=Epilogue:wght@400;700&display=swap' rel='stylesheet'></link>
       </Head>
       <main className='max-w-[1440px] font-idn-sans'>
-        <nav>
-
+        <nav className='p-4 pb-6 flex'>
+          <span className='font-bold text-[35px] leading-[35px]'>snap</span>
         </nav>
         <div className='flex'>
           <div className='flex flex-col md:flex-row'>
-            <div className='w-full md:order-2'>
+            <div className='md:hidden'>
               <Image
                 src={heroImage}
                 alt='Guy with Laptop'
